@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Blog Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Simple Blog</h1>
+    <div id="auth-area"></div>
+  </header>
+
+  <main>
+    <section id="new-post-section" class="card hidden">
+      <h2>Create Post</h2>
+      <input id="post-title" placeholder="Title">
+      <textarea id="post-content" placeholder="Write your post..."></textarea>
+      <button id="create-post">Create Post</button>
+    </section>
+
+    <section id="posts" class="posts"></section>
+  </main>
+
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="auth-heading">Login</h2>
+      <input id="username" placeholder="Username">
+      <input id="password" type="password" placeholder="Password">
+      <div class="modal-actions">
+        <button id="auth-submit">Login</button>
+        <button id="auth-toggle">Switch to Register</button>
+        <button id="auth-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
